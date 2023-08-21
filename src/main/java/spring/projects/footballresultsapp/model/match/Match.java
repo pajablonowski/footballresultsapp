@@ -13,33 +13,25 @@ public class Match {
 	private CompetitionSeason season;
 	private String utcDate;
 	private String status;
-	private String venue;
 	private String matchday;
-	private String stage;
-	private String group;
 	private String lastUpdated;
 	private Team homeTeam;
 	private Team awayTeam;
 	private MatchScore score;
-	private List<MatchReferees> referees;
 
 	public Match(String id, Competition competition, CompetitionSeason season, String utcDate,
-			String status, String venue, String matchday, String stage, String group, String lastUpdated,
-			Team homeTeam, Team awayTeam, MatchScore score, List<MatchReferees> referees) {
+			String status, String matchday, String lastUpdated,
+			Team homeTeam, Team awayTeam, MatchScore score) {
 		this.id = id;
 		this.competition = competition;
 		this.season = season;
 		this.utcDate = utcDate;
 		this.status = status;
-		this.venue = venue;
 		this.matchday = matchday;
-		this.stage = stage;
-		this.group = group;
 		this.lastUpdated = lastUpdated;
 		this.homeTeam = homeTeam;
 		this.awayTeam = awayTeam;
 		this.score = score;
-		this.referees = referees;
 	}
 
 	public String getId() {
@@ -72,29 +64,11 @@ public class Match {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getVenue() {
-		return venue;
-	}
-	public void setVenue(String venue) {
-		this.venue = venue;
-	}
 	public String getMatchday() {
 		return matchday;
 	}
 	public void setMatchday(String matchday) {
 		this.matchday = matchday;
-	}
-	public String getStage() {
-		return stage;
-	}
-	public void setStage(String stage) {
-		this.stage = stage;
-	}
-	public String getGroup() {
-		return group;
-	}
-	public void setGroup(String group) {
-		this.group = group;
 	}
 	public String getLastUpdated() {
 		return lastUpdated;
@@ -119,12 +93,6 @@ public class Match {
 	}
 	public void setScore(MatchScore score) {
 		this.score = score;
-	}
-	public List<MatchReferees> getReferees() {
-		return referees;
-	}
-	public void setReferees(List<MatchReferees> referees) {
-		this.referees = referees;
 	}
 
 }

@@ -8,24 +8,14 @@ import java.util.List;
 public class MatchList {
 
 
-	private String count;
+//	private String count;
 	private Competition competition;
 	private List<Match> matches;
 
-	public MatchList(String count, Competition competition, List<Match> matches) {
-		this.count = count;
+	public MatchList(Competition competition, List<Match> matches) {
 		this.competition = competition;
 		this.matches = matches;
 	}
-
-	public String getCount() {
-		return count;
-	}
-
-	public void setCount(String count) {
-		this.count = count;
-	}
-
 	public Competition getCompetition() {
 		return competition;
 	}
