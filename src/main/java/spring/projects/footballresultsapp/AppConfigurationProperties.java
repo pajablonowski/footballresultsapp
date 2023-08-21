@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfigurationProperties {
 
     private String TOKEN;
+    private String URI;
 
     public String getTOKEN() {
         return TOKEN;
@@ -15,5 +16,13 @@ public class AppConfigurationProperties {
 
     public void setTOKEN(String TOKEN) {
         this.TOKEN = TOKEN;
+    }
+
+    public String getURI() {
+        return URI;
+    }
+
+    public void setURI(String URI) {
+        this.URI = URI;
     }
 }
